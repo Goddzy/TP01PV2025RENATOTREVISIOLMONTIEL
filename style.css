@@ -1,0 +1,29 @@
+*{
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+nav{
+  padding: 30px;
+  background: rgba(12, 12, 12);
+  position: fixed;
+  width: 100%;
+  z-index: 3;
+}
+
+nav a{
+  text-decoration: none;
+  color: white;
+  margin: 0 10px;
+}
+
+nav a:hover{
+  border-bottom: red 1px solid;
+}
+
+.imagenPrincipal img{
+  object-fit: cover;
+  height: 550px;
+  width: 100%;
+}
