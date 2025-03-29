@@ -22,8 +22,38 @@ nav a:hover{
   border-bottom: red 1px solid;
 }
 
+.imagenPrincipal{
+  position: relative;
+}
+
 .imagenPrincipal img{
   object-fit: cover;
   height: 550px;
   width: 100%;
+  filter: brightness(50%);
+}
+
+.imagenPrincipal div{
+  width: 100%;
+  position: absolute;
+  color: white;
+  text-align: center;
+  top: 40%;
+}
+
+h1{
+  font-size: 50px;
+}
+
+.imagenPrincipal div p{
+  font-size: 25px;
+}
+
+.imagenPrincipal div hr{
+  width: 50%;
+  margin: 0 auto; 
+}
+
+.textoInicio{
+  margin: 50px;
 }
