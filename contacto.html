@@ -1,0 +1,50 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Estados Unidos</title>
+  <link rel="stylesheet" href="style.css">
+</head>
+<body>
+  <header>
+    <nav>
+      <b>
+        <a href="index.html">Inicio</a>
+        <a href="museos.html">Museos</a>
+        <a href="contacto.html">Contacto</a>
+      </b>
+    </nav>
+  </header>
+ 
+  <main>
+    <form class="formulario">
+      <form class="contenedorFormulario">
+        <div>
+          <label for="nombreApellido">Nombre y Apellido</label>
+          <input type="text" id="nombreApellido" placeholder="José Joarez" maxlength="60" minlength="3" required>
+        </div>
+
+          <div>
+           <label for="email">Email</label>
+           <input type="email" id="email" placeholder="josejoarez@gmail.com" maxlength="100" minlength="3" required>
+          </div>
+          
+          <div>
+            <label for="consulta">Consulta</label>
+            <textarea id="consulta" cols="20" rows="5" required minlength="6" maxlength="150" placeholder="Agregue su consulta"></textarea>
+          </div>
+          <div>
+            <button type="submit" class="botonStyled">Enviar</button>
+          </div>
+          
+      </form>
+    </form>
+  </main>
+
+
+  <footer>
+    <p>Todos los derechos reservados</p>
+  </footer>
+</body>
+</html>

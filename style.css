@@ -4,12 +4,23 @@
   padding: 0;
 }
 
+html, body {
+  height: 100%;
+  display: flex;
+  flex-direction: column;
+}
+
+main {
+  flex: 1; /* Hace que el contenido principal ocupe todo el espacio disponible */
+}
+
 nav{
   padding: 30px;
   background: rgba(12, 12, 12);
   position: fixed;
   width: 100%;
   z-index: 3;
+  margin: 0px;
 }
 
 nav a{
@@ -42,11 +53,11 @@ nav a:hover{
 }
 
 h1{
-  font-size: 50px;
+  font-size: 80px;
 }
 
 .imagenPrincipal div p{
-  font-size: 25px;
+  font-size: 40px;
 }
 
 .imagenPrincipal div hr{
@@ -55,5 +66,86 @@ h1{
 }
 
 .textoInicio{
-  margin: 50px;
+  margin: 100px 50px 50px 50px;
+}
+
+.textoInicio h2{
+  font-size: 40px;
+  font-family: 'Times New Roman', Times, serif;
+  margin-bottom: 30px;
+  text-align: center;
+}
+
+.textoInicio p{
+  font-size: 25px;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+.textoInicio article{
+  display: flex;
+  margin-top: 150px;
+  justify-content: center;
+}
+
+.imagenJuntoTexto {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  width: 100%;
+}
+
+.imagenJuntoTexto img{
+  height: 400px;
+  width: 400px;
+  border-radius: 50%;
+  object-fit: cover;
+}
+
+.titulosYTexto{
+  padding: 0px;
+}
+
+.interLineado {
+  margin-top: 50px;
+}
+
+footer {
+  text-align: center;
+  margin-top: 100px;
+  padding: 80px 0;
+  font-size: 20px;
+  background-color: grey;
+  color: white;
+}
+
+.formulario{
+  text-align: center;
+  justify-content: center;
+  margin: 200px;
+}
+
+.formulario label{
+  margin-bottom: 10px;
+  font-size: 20px;
+}
+
+.formulario input, textarea{
+  text-align: center;
+  padding: 5px;
+  font-size: 15px;
+  margin-bottom: 50px;
+}
+
+
+.contenedorFormulario div{
+  margin: 10px;
+}
+
+form div{
+  display: flex;
+  flex-direction: column;
+}
+
+.botonStyled{
+  padding: 20px;
 }
