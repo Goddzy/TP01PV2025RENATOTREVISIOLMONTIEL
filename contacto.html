@@ -18,33 +18,57 @@
   </header>
  
   <main>
-    <form class="formulario">
-      <form class="contenedorFormulario">
-        <div>
-          <label for="nombreApellido">Nombre y Apellido</label>
-          <input type="text" id="nombreApellido" placeholder="José Joarez" maxlength="60" minlength="3" required>
-        </div>
+    <form class="formulario" id="formulario">
+      <div>
+        <label for="nombreApellido">Nombre y Apellido</label>
+        <input type="text" id="nombreApellido" name="nombreApellido" placeholder="José Joarez" maxlength="60" minlength="3" required>
+      </div>
 
-          <div>
-           <label for="email">Email</label>
-           <input type="email" id="email" placeholder="josejoarez@gmail.com" maxlength="100" minlength="3" required>
-          </div>
-          
-          <div>
-            <label for="consulta">Consulta</label>
-            <textarea id="consulta" cols="20" rows="5" required minlength="6" maxlength="150" placeholder="Agregue su consulta"></textarea>
-          </div>
-          <div>
-            <button type="submit" class="botonStyled">Enviar</button>
-          </div>
-          
-      </form>
+      <div>
+        <label for="email">Email</label>
+        <input type="email" id="email" name="email" placeholder="josejoarez@gmail.com" maxlength="100" minlength="3" required>
+      </div>
+      
+      <div>
+        <label for="consulta">Consulta</label>
+        <textarea id="consulta" name="consulta" cols="20" rows="5" required minlength="6" maxlength="150" placeholder="Agregue su consulta"></textarea>
+      </div>
+      
+      <div>
+        <button type="submit" class="botonStyled">Enviar</button>
+      </div>
     </form>
   </main>
-
 
   <footer>
     <p>Todos los derechos reservados</p>
   </footer>
+
+  <script>
+
+    //conseguir los valores del documento html
+    const formulario = document.getElementById("formulario");
+    const nombreApellido = document.getElementById("nombreApellido");
+    const email = document.getElementById("email");
+    const consulta = document.getElementById("consulta");
+
+    //agregar un controlador de eventos al formulario, en este caso, "submit"
+    formulario.addEventListener("submit",(e)=>{
+      
+      //evita que los datos se pierdan inmediatamente después de apretar el botón
+      e.preventDefault(); 
+
+      //mostrar en un alert los datos
+      alert("Nombre y Apellido: " + nombreApellido.value + "\nEmail: " + email.value + "\nConsulta: " + consulta.value);
+
+      //limpiar los formularios
+      nombreApellido.value = "";
+      email.value = "";
+      consulta.value = "";
+    })
+
+  </script>
+
+
 </body>
 </html>
